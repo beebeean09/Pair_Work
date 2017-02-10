@@ -14,7 +14,7 @@ class Poll < ActiveRecord::Base
   validates :user_id, presence: true
 
   belongs_to :author,
-    class_name: "User"
+    class_name: "User",
     primary_key: :id,
     foreign_key: :user_id
 
